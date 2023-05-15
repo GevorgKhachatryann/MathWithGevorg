@@ -1,0 +1,242 @@
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:550px;
+    /* background-color: #f8f8f8;
+    font-family: Arial, sans-serif; */
+}
+
+.about-me-section {
+    flex-basis: 50%;
+    /* padding: 2rem; */
+    
+    text-align: center;
+}
+
+.name-surname {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.profession {
+    font-size: 1.5rem;
+    color: #635238;
+    font-weight:800;
+}
+
+.about-me-text {
+    margin-top: 1rem;
+    color: #666666;
+}
+
+.my-works-button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: #498AFB;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.my-works-button:hover {
+    background-color: #09C372;
+    transform: scale(1.05);
+}
+
+.social-icons {
+    margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 1rem;
+    padding:5px;
+    padding-left:10px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 1;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+.photo-section {
+    height:650px;
+    flex-basis: 50%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.my-photo {
+   margin-top:100px;
+    width: 350px;
+    height: 350px;
+    margin-left:70px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.my-photo:hover {
+    transform: scale(1.1);
+}
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icon {
+    position: relative;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #635238;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-icon i {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    
+  }
+  
+  .social-icon-tooltip {
+    position: absolute;
+    bottom: -27px;
+    border-radius:2px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: #635238;
+    color: #fff;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover .social-icon-tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+
+  .button {
+    position: relative;
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    background-color: #635738;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top:30px;
+  }
+  
+  .button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: translateX(-101%);
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+  
+  .button:hover:before {
+    transform: translateX(0%);
+  }
+  
+  .button:hover {
+    border: 1px solid #635238;
+    background-color: #fff;
+    color: #635238;
+  }
+  
+
+/* Define the bubble styles */
+.bubble {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #e7dfdf;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: -1;
+    animation: bubbleMove 3s infinite ease-in-out;
+    transform-origin: center;
+  }
+  
+  /* Define different bubble types using pseudo-elements */
+  .bubble::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #c9aa24;
+    border-radius: 50%;
+    opacity: 0.5;
+    top: -15px;
+    left: -15px;
+    animation: bubbleMove 5s infinite ease-in-out;
+    transform-origin: center;
+  }
+  
+  .bubble::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(201, 149, 9);
+    border-radius: 50%;
+    opacity: 0.5;
+    top: -20px;
+    right: -20px;
+    animation: bubbleMove 4s infinite ease-in-out;
+    transform-origin: center;
+  }
+  
+  /* Define the bubble movement animation */
+  @keyframes bubbleMove {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Adjust the vertical distance as needed */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
